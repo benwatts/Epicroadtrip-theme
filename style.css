@@ -187,6 +187,7 @@ a:hover { color: #036; }
   background: url(images/banner-shadow.png) 0 0 no-repeat;
   width: 1004px;
   height: 34px;
+  z-index: 1;
   }
 
 /** 
@@ -199,10 +200,14 @@ a:hover { color: #036; }
 /** 
  * Top Menu 
  */  
+.js #top-menu ul{ display: none; }
 #top-menu ul{
   list-style: none;
   font: 14px 'CarrosserieLight', sans-serif;  
   position: absolute;
+  z-index: 3;
+  top: 212px;
+  margin: 0;
   }
 #top-menu li{  
   float: left;
@@ -234,7 +239,8 @@ a:hover { color: #036; }
   border-right: none;
   }
   
-#top-menu .current_page_item a{
+#top-menu .current_page_item a,
+.home #top-menu .home a{
   background-position: 0 -50px;
   color: #f4ef8b;
   }
