@@ -1,0 +1,338 @@
+/*
+Theme Name: Roatrip
+Theme URI: http://www.benwatts.ca
+Description: Travel blog
+Author: bw
+Version: 1.0
+*/
+
+@font-face {
+	font-family: 'CarrosserieLight';
+	src: url('fonts/carrosserie-light-webfont.eot');
+	src: url('fonts/carrosserie-light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/carrosserie-light-webfont.woff') format('woff'),
+	     url('fonts/carrosserie-light-webfont.ttf') format('truetype'),
+	     url('fonts/carrosserie-light-webfont.svg#CarrosserieLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+
+/**
+ * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
+ */
+
+body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+select, input, textarea, button { font:99% sans-serif; }
+
+/* Normalize monospace sizing:
+   en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+
+/**
+ * Minimal base styles.
+ */
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: none; }
+
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+
+/* Remove margins for navigation lists */
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+
+td { vertical-align: top; }
+
+/* Set sub, sup without affecting line-height: gist.github.com/413930 */
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre {
+  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+  white-space: pre; white-space: pre-wrap; word-wrap: break-word;
+  padding: 15px;
+}
+
+textarea { overflow: auto; } /* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
+
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+
+/* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea { margin: 0; }
+
+/* Colors for form validity */
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid {
+   border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red;
+}
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+
+/* These selection declarations have to be separate
+   No text-shadow: twitter.com/miketaylr/status/12228805301
+   Also: hot pink! */
+::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+
+/* j.mp/webkit-tap-highlight-color */
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+button {  width: auto; overflow: visible; }
+
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+
+
+
+/** 
+ * Generic 
+ */
+
+html { 
+  background: #66523d url(images/bg-woodtile.jpg);
+  overflow-y: scroll; 
+  height: 100%
+  }
+body{
+  background: url(images/bg-gradient.png) 50% 0 no-repeat;
+  height: 100%;
+  text-align: center;
+  padding-top: 40px;
+  }
+
+body, select, input, textarea {
+  color: #444;
+  font-family: Georgia, serif;
+  }
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+.wrapper{
+  width: 960px;
+  margin: 0 auto;
+  text-align: left;
+  }
+
+#header{
+  background: url(images/banner.jpg) 0 0 no-repeat;
+  position: relative;
+  width: 960px;
+  height: 240px;
+  margin: 0 0 40px 0;
+  }
+#header-shadow{
+  position: absolute;
+  top: 223px;
+  left: -22px;
+  background: url(images/banner-shadow.png) 0 0 no-repeat;
+  width: 1004px;
+  height: 34px;
+  }
+
+/** 
+ * Header 
+ */ 
+#site-title{
+  
+  }
+  
+/** 
+ * Top Menu 
+ */  
+#top-menu ul{
+  list-style: none;
+  font: 14px 'CarrosserieLight', sans-serif;  
+  position: absolute;
+  }
+#top-menu li{  
+  float: left;
+  }
+#top-menu a{
+  display: block;
+  background: url(images/nav-btn.png) 0 0 repeat-x;
+  color: #fff;
+  text-shadow: 0 -1px 0 #1d1814;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-right: solid 1px #4e4031;
+  border-left: solid 1px #816d58;
+  border-bottom: solid 1px #4f4433;
+  }
+#top-menu a:hover{
+  color: #f4ef8b;
+  }
+#top-menu li:first-child a{ 
+  -moz-border-radius: 6px 0 0 6px;
+  -webkit-border-radius: 6px 0 0 6px;
+  border-radius: 6px 0 0 6px;
+  border-left: none;
+  }
+#top-menu li:last-child a{   
+  -moz-border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0;;
+  border-radius: 0 6px 6px 0;
+  border-right: none;
+  }
+  
+#top-menu .current_page_item a{
+  background-position: 0 -50px;
+  color: #f4ef8b;
+  }
+#top-menu a:active{
+  background-position: 0 -50px;
+  color: #fff;
+  }
+  
+  
+ 
+/** 
+ * Home  
+ */  
+
+.home .col-left{
+  width: 480px;
+  float: left;
+  }
+.home .col-right{
+  width: 460px;
+  float: right;
+  }  
+  
+#excerpts .post{
+  background: #fff url(images/excerpt.jpg) 0 0 no-repeat;
+  padding: 30px 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Non-semantic helper classes
+ */
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; } /* Hide for both screenreaders and browsers: */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; } /* Hide visually, available for screenreaders */
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; } /* Hide visually and from screenreaders, but maintain layout */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+/**
+ * Media queries for responsive design.
+ *
+ * These follow after primary styles so they will successfully override.
+ */
+
+@media all and (orientation:portrait) {
+  /* Style adjustments for portrait mode goes here */
+
+}
+
+@media all and (orientation:landscape) {
+  /* Style adjustments for landscape mode goes here */
+
+}
+
+/* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
+   consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+
+
+  /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you: j.mp/textsizeadjust */
+  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+}
+
+
+/**
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ */
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+
