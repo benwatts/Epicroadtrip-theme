@@ -20,6 +20,18 @@
     s.parentNode.insertBefore(g,s)}(document,"script"));
   </script>
   
+  <script src="//maps.google.com/maps/api/js?sensor=false"></script>
+  <script>
+  // determine how this is going to work...
+  var myLatlng = new google.maps.LatLng(-34.397, 150.644);
+  var myOptions = {
+    zoom: 8,
+    center: myLatlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };  
+  var map = new google.maps.Map(document.getElementById("last-location-map"), myOptions);
+  </script>
+  
   <small style="color: yellow">UA-XXXXX-X</small>  
 
   <?php wp_footer(); ?>

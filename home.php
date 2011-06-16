@@ -1,19 +1,30 @@
 <?php get_header(); ?>
 
   <div class="col-left">
-    <div id="excerpts">
-      <?php	get_template_part( 'loop', 'index' ); ?>	
-    </div>
+    <section id="excerpts">
+      <header>
+        <h2>Travel Log</h2>
+      </header>
+      <?php	get_template_part( 'loop', 'home' ); ?>	
+    </section>
+    
+    <p class="more"><a href="" title="View full travel log">View full travel log</a></p>
   </div> 
   
   <div class="col-right">
   
-    <div id="whereabouts-widget">
+    <section id="whereabouts-widget" class="widget">
       <header>
         <h2>Our Whereabouts</h2>
-        <p>As of August 23 at 15:00 EST</p>
+        <p class="last-updated">As of August 23 at 15:00 EST</p>
       </header>
-    </div><!-- /#whereabouts-widget -->
+      
+      <div class="widget-content">
+        <div id="last-location-map"></div>        
+      </div>
+      
+    </section><!-- /#whereabouts-widget -->
+    
     
     <?php get_sidebar(); ?>    
     

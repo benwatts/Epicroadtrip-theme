@@ -2,13 +2,6 @@
 
 
 
-
-
-
-
-
-
-
 /** Tell WordPress to run twentyten_setup() when the 'after_setup_theme' hook is run. */
 add_action( 'after_setup_theme', 'rt_setup' );
 
@@ -261,12 +254,12 @@ function twentyten_widgets_init() {
 add_action( 'widgets_init', 'twentyten_widgets_init' );
 
 
-if ( ! function_exists( 'twentyten_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  *
  * @since Twenty Ten 1.0
  */
+ 
 function twentyten_posted_on() {
 	printf( __( '<span class="%1$s">Posted on</span> %2$s <span class="meta-sep">by</span> %3$s', 'twentyten' ),
 		'meta-prep meta-prep-author',
@@ -282,7 +275,7 @@ function twentyten_posted_on() {
 		)
 	);
 }
-endif;
+
 
 if ( ! function_exists( 'twentyten_posted_in' ) ) :
 /**
