@@ -154,7 +154,6 @@ body{
   background: url(images/bg-gradient.png) 50% 0 no-repeat;
   height: 100%;
   text-align: center;
-  padding-top: 40px;
   }
 
 body, select, input, textarea {
@@ -177,12 +176,12 @@ a:hover { color: #0d937b; }
   background: url(images/banner.jpg) 0 0 no-repeat;
   position: relative;
   width: 960px;
-  height: 240px;
+  height: 166px;
   margin: 0 0 40px 0;
   }
 #header-shadow{
   position: absolute;
-  top: 223px;
+  top: 150px;
   left: -22px;
   background: url(images/banner-shadow.png) 0 0 no-repeat;
   width: 1004px;
@@ -206,7 +205,7 @@ a:hover { color: #0d937b; }
   font: 14px 'CarrosserieLight', sans-serif;  
   position: absolute;
   z-index: 3;
-  top: 212px;
+  top: 140px;
   margin: 0;
   }
 #top-menu li{  
@@ -222,6 +221,8 @@ a:hover { color: #0d937b; }
   border-right: solid 1px #4e4031;
   border-left: solid 1px #816d58;
   border-bottom: solid 1px #4f4433;
+  -webkit-transition: color 3.0s ease-out;
+  -moz-transition: color .5s ease-out;  
   }
 #top-menu a:hover{
   color: #f4ef8b;
@@ -279,6 +280,15 @@ a:hover { color: #0d937b; }
   font-size: 11px;
   color: #fff;
   }
+  
+.post-content{
+  background: #fff url(images/paper.jpg) 0 -46px repeat-x;
+  padding: 0 25px 25px 25px;
+  }
+.post-cap-top{
+  background: url(images/post-cap-top.png) 0 0 no-repeat;
+  padding: 46px 0 0 0;
+  }  
 
 
 
@@ -287,20 +297,14 @@ a:hover { color: #0d937b; }
  * Home  
  */  
 
-.home .col-left{
-  width: 480px;
+.col-left{
+  width: 649px;
   float: left;
   }
-.home .col-right{
-  width: 460px;
+.col-right{
+  width: 280px;
   float: right;
   }  
-  
-#excerpts .post{
-  background: #fff url(images/excerpt.jpg) 0 0 no-repeat;
-  padding: 30px 24px 14px;
-  margin: 0 0 20px 0;
-  }
 
 section header{
   margin: 0 0 5px 0;
