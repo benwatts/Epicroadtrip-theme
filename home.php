@@ -2,9 +2,6 @@
 
   <div class="col-left">
     <section id="excerpts">
-      <header>
-        <h2>Travel Log</h2>
-      </header>
       <?php	get_template_part( 'loop', 'home' ); ?>	
     </section>
     

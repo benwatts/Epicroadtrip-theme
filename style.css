@@ -163,7 +163,7 @@ body, select, input, textarea {
 
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
-a, a:active, a:visited { color: #509310; }
+a, a:active, a:visited { color: #309382; }
 a:hover { color: #0d937b; }
 
 .wrapper{
@@ -254,8 +254,7 @@ a:hover { color: #0d937b; }
  */   
   
 .entry-title{
-  font-size: 18px; 
-  font-weight: normal;
+  font: normal 36px/1 'CarrosserieLight', sans-serif;  
   margin: 0 0 10px 0;
   }
 .entry-title a{ text-decoration: none; }
