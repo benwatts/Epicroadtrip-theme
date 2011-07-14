@@ -31,8 +31,6 @@
   };  
   var map = new google.maps.Map(document.getElementById("last-location-map"), myOptions);
   </script>
-  
-  <small style="color: yellow">UA-XXXXX-X</small>  
 
   <?php wp_footer(); ?>
 
