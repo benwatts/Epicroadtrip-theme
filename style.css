@@ -60,15 +60,8 @@ hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin:
 input, select { vertical-align: middle; }
 
 
-/**
- * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
- */
-
 body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
 select, input, textarea, button { font:99% sans-serif; }
-
-/* Normalize monospace sizing:
-   en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 
@@ -76,13 +69,11 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
  * Minimal base styles.
  */
 
-/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 a:hover, a:active { outline: none; }
 
 ul, ol { margin-left: 2em; }
 ol { list-style-type: decimal; }
 
-/* Remove margins for navigation lists */
 nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
 
 small { font-size: 85%; }
@@ -90,49 +81,38 @@ strong, th { font-weight: bold; }
 
 td { vertical-align: top; }
 
-/* Set sub, sup without affecting line-height: gist.github.com/413930 */
 sub, sup { font-size: 75%; line-height: 0; position: relative; }
 sup { top: -0.5em; }
 sub { bottom: -0.25em; }
 
 pre {
-  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
   white-space: pre; white-space: pre-wrap; word-wrap: break-word;
   padding: 15px;
 }
 
-textarea { overflow: auto; } /* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
+textarea { overflow: auto; }
 
 .ie6 legend, .ie7 legend { margin-left: -7px; } 
 
-/* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
 input[type="radio"] { vertical-align: text-bottom; }
 input[type="checkbox"] { vertical-align: bottom; }
 .ie7 input[type="checkbox"] { vertical-align: baseline; }
 .ie6 input { vertical-align: text-bottom; }
 
-/* Hand cursor on clickable input elements */
 label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
 
-/* Webkit browsers add a 2px margin outside the chrome of form elements */
 button, input, select, textarea { margin: 0; }
 
-/* Colors for form validity */
 input:valid, textarea:valid   {  }
 input:invalid, textarea:invalid {
    border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red;
 }
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
+::-moz-selection{ background: #fef98d; color:#666; text-shadow: none; }
+::selection { background:#fef98d; color:#666; text-shadow: none; }
 
-/* These selection declarations have to be separate
-   No text-shadow: twitter.com/miketaylr/status/12228805301
-   Also: hot pink! */
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; }
-
-/* j.mp/webkit-tap-highlight-color */
-a:link { -webkit-tap-highlight-color: #FF5E99; }
+a:link { -webkit-tap-highlight-color: #fef98d; }
 
 button {  width: auto; overflow: visible; }
 
@@ -254,41 +234,78 @@ a:hover { color: #0d937b; }
  */   
   
 .entry-title{
-  font: normal 36px/1 'CarrosserieLight', sans-serif;  
+	float: left;
+  font: normal 32px/1.2 'CarrosserieLight', sans-serif;  
   margin: 0 0 10px 0;
+	width: 82%;
   }
-.entry-title a{ text-decoration: none; }
+.entry-title a{ text-decoration: none;  }
 .entry-title a:hover{ text-decoration: underline; }
 
-.entry-content{ line-height: 1.46em; }
-.entry-content p{ margin: 0 0 1.2em 0; }
+.entry-date{
+	padding: 14px 0 0 0;
+	float: right;
+  font: 18px 'CarrosserieLight', sans-serif;  
+	}
 
-.entry-details .left{ float: left; }
-.entry-details .right{ float: right; color: #866c50; font-style: italic; }
+.entry{ line-height: 1.66em; }
+.entry p{ margin: 0 0 1.2em 0; }
 
+.entry-details .entry-date{ float: right; color: #866c50; font-style: italic; }
+
+.attachment-post-thumbnail{ 
+	float: left;
+	border: solid 1px #8e7a64;
+	-webkit-box-shadow: 5px 0 10px rgba(0,0,0,.4);
+	-moz-box-shadow: 5px 0 10px rgba(0,0,0,.4);
+	box-shadow: 0 5px 10px rgba(0,0,0,.4);
+	margin: 0 20px 10px -50px;
+	}
+
+.comments-link{
+	padding: 10px 0 0 0;
+	float: right;
+	}
 .comments-link a{
   display: block;
-  float: left;
   background: url(images/comment-btn.png) 0 0 repeat-x;
-  padding: 6px;
+	min-width: 80px;
+	max-width: 225px;
+	height: 30px; 
+	padding:  8px 14px 0 50px;
+	text-align: left;
   -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
-  border-bottom: solid 1px #11826f;
-  text-shadow: 0 -1px 0 #33a793;
+	border-top: solid 1px #fff;
+  border-bottom: solid 1px #f8af7c;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 11px;
-  color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 #fff;
+	font: 18px 'CarrosserieLight', sans-serif;
+  color: #f3751f;
   }
+.comments-link a:hover{
+	background-position: 0 -38px;
+	border-bottom: solid 1px #fff;
+  border-top: solid 1px #f8af7c;	
+	text-shadow: 0 -1px 0 #fff;
+	}
+
+.post{
+	margin: 0 0 20px 0;
+	}
   
 .post-content{
-  background: #fff url(images/paper.jpg) 0 -46px repeat-x;
+  background: #fff url(images/paper.jpg) 0 -46px;
   padding: 0 25px 25px 25px;
   }
 .post-cap-top{
-  background: url(images/post-cap-top.png) 0 0 no-repeat;
+  background: url(images/post-cap-top.png) 0 0 repeat-x;
   padding: 46px 0 0 0;
   }  
-
+.post-cap-bottom{
+	background: url(images/post-cap-bot.png) 0 100% no-repeat; /* it'snot a perfect fit, but it'll do. */
+	height: 13px;
+	}
 
 
 
@@ -297,7 +314,7 @@ a:hover { color: #0d937b; }
  */  
 
 .col-left{
-  width: 649px;
+  width: 650px;
   float: left;
   }
 .col-right{
@@ -305,21 +322,21 @@ a:hover { color: #0d937b; }
   float: right;
   }  
 
-section header{
-  margin: 0 0 5px 0;
-  overflow: hidden; height: 1%;
-  }  
-section header h2{
-  font: 24px 'CarrosserieLight', sans-serif;  
-  color: #fff;
-  text-shadow: 0 -1px 0 #3e3426;
-  float: left;
-  } 
-
 .widget{
   margin: 0 0 20px 0;
   } 
 
+.widget h2{
+  font: 24px 'CarrosserieLight', sans-serif;  
+  color: #fff;
+  text-shadow: 0 -1px 0 #3e3426;
+	margin: 0 0 10px 0;
+	}
+
+.widget-content{
+	overflow: hidden;
+	height: 1%;
+}
 
 #whereabouts-widget .last-updated{
 	font-size: 11px;
@@ -327,11 +344,12 @@ section header h2{
 	font-style: italic;
 	background: url(images/mini-satellite.png) 0 0 no-repeat;
 	padding: 4px 0 4px 24px;
-	margin: 9px 0 0 0;
+	margin: 0 0 0 0;
 	float: right;
 	}
 #whereabouts-widget .widget-content{
 	border: solid 10px #fff;
+	margin: 0 0 10px 0;
   }
 #whereabouts-widget #last-location-map{
   border: solid 1px #cec5bb;

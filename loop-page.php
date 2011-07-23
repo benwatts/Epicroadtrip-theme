@@ -1,19 +1,27 @@
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<?php if ( is_front_page() ) { ?>
-			<h2 class="entry-title"><?php the_title(); ?></h2>
-		<?php } else { ?>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-		<?php } ?>
-
-		<div class="entry-content">
-			<?php the_content(); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
-			<?php edit_post_link( __( 'Edit', 'twentyten' ), '<span class="edit-link">', '</span>' ); ?>
-		</div><!-- .entry-content -->
-	</div><!-- #post-## -->
-
-	<?php comments_template( '', true ); ?>
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	  
+    <div class="post-cap-top"><!-- A cap? I know. I'm a monster. --></div>
+	
+    <div class="post-content">
+      <header class="clearfix">
+  		  <h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h1>
+  		</header>
+  
+  		<div class="entry">
+  		  <?php
+        if(has_post_thumbnail()){
+        	the_post_thumbnail();
+        }
+  			the_content(); 
+  			?>
+  		</div>
+		</div><!-- /.post-content -->
+		
+		<div class="post-cap-bottom"><!-- Oh shit! Another one! --></div>
+		
+		
+	</article><!-- #post-## -->
 
 <?php endwhile; // end of the loop. ?>
