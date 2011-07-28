@@ -4,8 +4,6 @@
     <section id="excerpts">
       <?php	get_template_part( 'loop', 'home' ); ?>	
     </section>
-    
-    <p class="more"><a href="" title="View full travel log">View full travel log</a></p>
   </div> 
   
   <div class="col-right">    

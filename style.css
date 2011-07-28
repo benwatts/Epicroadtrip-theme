@@ -4,6 +4,9 @@ Theme URI: http://www.benwatts.ca
 Description: Travel blog
 Author: bw
 Version: 1.0
+
+I have rushed this... *cough*.
+
 */
 
 @font-face {
@@ -176,6 +179,8 @@ a:hover { color: #0d937b; }
   
   }
   
+
+
 /** 
  * Top Menu 
  */  
@@ -357,6 +362,32 @@ a:hover { color: #0d937b; }
   }
 
 
+/** 
+ * Single Post 
+ */
+#nav-above{
+	overflow: hidden; height: 1%;
+	margin: 0 0 15px 0;
+	}
+	
+.navigation a{ color: #fff; text-decoration: none; }
+.navigation a:hover{ color: #f4ef8b; }
+	
+.nav-previous{
+	float: left;
+	width: 50%;
+	}
+.nav-next{
+	float: right;
+	width: 50%;
+	text-align: right;
+	}
+
+
+/** 
+ * Comments 
+ */
+
 
 
 
@@ -377,31 +408,6 @@ a:hover { color: #0d937b; }
 .clearfix { zoom: 1; }
 
 
-
-/**
- * Media queries for responsive design.
- *
- * These follow after primary styles so they will successfully override.
- */
-
-@media all and (orientation:portrait) {
-  /* Style adjustments for portrait mode goes here */
-
-}
-
-@media all and (orientation:landscape) {
-  /* Style adjustments for landscape mode goes here */
-
-}
-
-/* Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
-   consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
-@media screen and (max-device-width: 480px) {
-
-
-  /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you: j.mp/textsizeadjust */
-  /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
-}
 
 
 /**
