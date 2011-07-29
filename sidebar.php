@@ -1,3 +1,5 @@
+
+
 <section id="whereabouts-widget" class="widget">
   <h2>Our Whereabouts</h2>      
   <div class="widget-content">
@@ -6,6 +8,7 @@
   <p class="last-updated">As of August 23 at 15:00 EST</p>  
 </section><!-- /#whereabouts-widget -->
 
+<?php /*
 <div id="col-widgets">
 	<ul class="xoxo">
     <?php if ( ! dynamic_sidebar( 'Widgets in the Right Column' ) ) : ?>
@@ -18,3 +21,4 @@
     <?php endif; // end primary widget area ?>
 	</ul>
 </div><!-- #primary .widget-area -->
+*/ ?>
