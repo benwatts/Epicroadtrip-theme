@@ -19,7 +19,7 @@ function readyForYou(e){
   $('html').addClass('js');
   
   // align menu to center. # of menu items is liable to change. 
-  var tm = $('#top-menu ul:first');
+  var tm = $('#topmenu ul:first');
   var dx = 480 - tm.innerWidth()/2 ; // 480 = (960/2)
   tm.css('left', dx + 'px').show();
   

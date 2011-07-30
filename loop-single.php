@@ -26,10 +26,6 @@
 
         		<footer class="entry-meta clearfix">
 
-        		  <p class="comments-link">
-        				<?php comments_popup_link('Leave a comment', '1 Comment', '% Comments'); ?>
-        		  </p>
-
         		  <div class="entry-details">
         		    <div class="gravatar">
         		      <?php echo get_avatar( get_the_author_meta( 'user_email' ), 48 ); ?>

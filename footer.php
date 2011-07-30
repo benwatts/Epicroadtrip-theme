@@ -21,16 +21,16 @@
   </script>
   
   <script src="//maps.google.com/maps/api/js?sensor=false"></script>
-  <script>
+	<script>
   // determine how this is going to work...
-  var myLatlng = new google.maps.LatLng(-34.397, 150.644);
+  var myLatlng = new google.maps.LatLng(gmapLat,gmapLong);
   var myOptions = {
-    zoom: 8,
+    zoom: 15,
     center: myLatlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };  
   var map = new google.maps.Map(document.getElementById("last-location-map"), myOptions);
-  </script>
+	</script>
 
   <?php wp_footer(); ?>
 

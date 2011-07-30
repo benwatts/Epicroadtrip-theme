@@ -5,8 +5,14 @@
   <div class="widget-content">
     <div id="last-location-map"></div>        
   </div>
-  <p class="last-updated">As of August 23 at 15:00 EST</p>  
+  <p class="last-updated">As of Friday July 29, 2011 at 11:19pm EST</p>  
 </section><!-- /#whereabouts-widget -->
+
+<script>
+var zoom = 15; 
+var	gmapLat = 46.504153;
+var	gmapLong = -80.936354;
+</script>
 
 <?php /*
 <div id="col-widgets">
