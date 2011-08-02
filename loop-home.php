@@ -34,7 +34,7 @@
 						<?php 
 						$location = get_post_meta($post->ID, 'location', true);
 						if( !empty($location) ): ?>			
-    		    	<p>In: <em><?php echo get_post_meta($post->ID, 'location', true) ?></em>
+    		    	<p>Posted in: <em><?php echo get_post_meta($post->ID, 'location', true) ?></em>
 						<?php endif; ?>
   		    </div>
   		  </div>
