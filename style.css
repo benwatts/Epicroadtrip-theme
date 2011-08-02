@@ -266,6 +266,28 @@ a:hover { color: #0d937b; }
 
 .entry-details .entry-date{ float: right; color: #866c50; font-style: italic; }
 
+.entry-details .gravatar{
+	float: left;
+	width: 60px;
+	}
+.entry-details .gravatar img{ 
+	display: block; 
+	padding: 1px; 
+	background: #fff; 
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.2);
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+	}
+	
+.entry-details .post-author-info{
+  font: 16px 'CarrosserieLight', sans-serif;  
+	color: #bbb;
+	line-height: 1.5em;
+	}
+.entry-details .post-author-info em{
+	color: #666;
+	}
+
 .attachment-post-thumbnail{ 
 	float: left;
 	border: solid 1px #8e7a64;
@@ -420,11 +442,11 @@ a:hover { color: #0d937b; }
 	}
 .commentlist .a-comment{
 	margin: 0 0 20px 0;
-	border-bottom: solid 1px #2a2a2a;	
+	border-bottom: solid 1px #9d876e;	
 	padding: 0 0 0 0;
 	}
 .commentlist li li .a-comment{ /* nested comments */
-	border-left: solid 1px #2a2a2a;	
+	border-left: solid 1px #9d876e;	
 	padding: 15px 0 0 10px;
 	}
 .commentlist .children{
@@ -443,6 +465,12 @@ a:hover { color: #0d937b; }
 .comment-content{
 	line-height: 1.35em;
 	}
+.comment-content a{
+	color: #fff;
+	}
+.comment-content a:hover{
+	color: #F4EF8B;
+	}	
 
 .commentlist article{
 	float: right;
@@ -452,7 +480,8 @@ a:hover { color: #0d937b; }
 	}
 
 .comment-author,
-.comment-author	a{ color: #fff; }
+.comment-author	a{ color: #F4EF8B; }
+.comment-author{ font-size: 1.076923077em } /* 14/13 */
 .comment-author span{ background: #32cce4; padding: 1px; }
 
 .comment-details time{ float: right; }
@@ -474,6 +503,17 @@ a:hover { color: #0d937b; }
 	color: #333;
 	text-decoration: none;
 	}
+	
+#cancel-comment-reply-link{
+	font-size: .75em;
+	float: right;
+	color: #F4EF8B;
+	text-decoration: none;
+	padding: 6px 0 0 0;
+	}
+#cancel-comment-reply-link:hover{
+	color: #fff;
+}	
 
 
 

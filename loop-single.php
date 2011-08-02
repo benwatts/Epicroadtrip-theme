@@ -30,12 +30,10 @@
         		    <div class="gravatar">
         		      <?php echo get_avatar( get_the_author_meta( 'user_email' ), 48 ); ?>
         		    </div>
-        		    <!--
         		    <div class="post-author-info">
         		      <p>By: <em><?php the_author(); ?><?php edit_post_link( 'Edit', '<small class="edit-link">(', ')</small>' ); ?></p>
-          		    <p>In: <?php the_taxonomies(); ?> </p>
+          		    <!-- <p>In: <?php the_taxonomies(); ?> </p>-->
         		    </div>
-        		    -->
         		  </div>
         		</footer>
       		</div><!-- /.post-content -->
