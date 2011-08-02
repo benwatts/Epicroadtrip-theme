@@ -23,6 +23,7 @@ function rt_setup() {
   );
 
 	set_post_thumbnail_size( 265, 175, true );
+	add_image_size( 'primary image', 600, 400 );
 }
 
 

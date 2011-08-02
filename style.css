@@ -162,6 +162,13 @@ a:hover { color: #0d937b; }
   height: 166px;
   margin: 0 0 40px 0;
   }
+#header #go-home{
+	display: block;
+	width: 960px;
+  height: 166px;
+	text-indent: -900em;
+	overflow: hidden;
+	}
 #header-shadow{
   position: absolute;
   top: 150px;

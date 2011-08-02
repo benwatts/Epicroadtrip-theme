@@ -43,15 +43,15 @@
 
   <div id="header">
     <?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
-    <<?php echo $heading_tag; ?> id="site-title" class="visuallyhidden">
-    	<span>
-    		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-    	</span>
+    <<?php echo $heading_tag; ?> id="site-title">
+    		<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" id="go-home" rel="home"><?php bloginfo( 'name' ); ?></a>
     </<?php echo $heading_tag; ?>>
     
+		<!--	
     <div id="topmenu">
       <?php wp_nav_menu( array('container_id' => 'top-menu') ); ?>
     </div>
+		-->
     
     <div id="header-shadow"></div>
   </div>
