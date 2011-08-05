@@ -1,22 +1,14 @@
-
-
-<section id="whereabouts-widget" class="widget">
-  <h2>Our Whereabouts</h2>      
-  <div class="widget-content">
-    <div id="last-location-map"></div>        
-  </div>
-  <p class="last-updated">As of Friday August 5 at 9:01am MDT</p>  
-</section><!-- /#whereabouts-widget -->
-
-<script>
-var zoom = 16; 
-var	gmapLat = 55.185501;
-var	gmapLong = -118.793965;
-</script>
-
-<?php /*
 <div id="col-widgets">
 	<ul class="xoxo">
+
+		<li id="whereabouts-widget" class="widget">
+		  <h2 class="widget-title">Our Whereabouts</h2>      
+		  <div class="widget-content">
+		    <div id="last-location-map"></div>        
+		  </div>
+		  <p class="last-updated">As of Friday August 5 at 9:01am MDT</p>  
+		</li>
+		
     <?php if ( ! dynamic_sidebar( 'Widgets in the Right Column' ) ) : ?>
       <li class="widget">
         <h2>Uh-oh!</h2>
@@ -25,6 +17,14 @@ var	gmapLong = -118.793965;
         </div>
       </li>
     <?php endif; // end primary widget area ?>
+
 	</ul>
 </div><!-- #primary .widget-area -->
-*/ ?>
+
+<script>
+// I know, eh:
+var zoom = 16; 
+var	gmapLat = 55.185501;
+var	gmapLong = -118.793965;
+// Poorly planned. ;)
+</script>

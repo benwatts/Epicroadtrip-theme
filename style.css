@@ -358,11 +358,37 @@ a:hover { color: #0d937b; }
   float: right;
   }  
 
+
+#col-widgets > ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+
 .widget{
   margin: 0 0 20px 0;
+	overflow: hidden; height: 1%;
+	color: #d3c5b6;
   } 
+.widget a{
+	color: #fff;
+	}
+.widget a:hover{
+	color: #F4EF8B;
+	}
+.widget ul{
+	margin: 0;
+	list-style: none;
+	font-size: .923076923em; /* 12 / 13 */
+	}
+.widget li{
+	border-bottom: 1px dotted #C7A17F;
+	padding: 0 0 5px 15px;
+	margin: 0 0 5px 0;
+	background: url(images/bullet-on-brown.gif) 0 3px no-repeat;
+	}
 
-.widget h2{
+.widget-title{
   font: 24px 'CarrosserieLight', sans-serif;  
   color: #fff;
   text-shadow: 0 -1px 0 #3e3426;
@@ -372,7 +398,7 @@ a:hover { color: #0d937b; }
 .widget-content{
 	overflow: hidden;
 	height: 1%;
-}
+	}
 
 #whereabouts-widget .last-updated{
 	font-size: 11px;
