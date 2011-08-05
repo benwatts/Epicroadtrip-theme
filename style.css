@@ -351,6 +351,7 @@ a:hover { color: #0d937b; }
 .col-left{
   width: 650px;
   float: left;
+	padding: 0 0 20px 0;
   }
 .col-right{
   width: 280px;
@@ -390,6 +391,21 @@ a:hover { color: #0d937b; }
   border: solid 1px #cec5bb;
   height: 220px;
   }
+
+.post-nav{
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: dotted 1px rgb(199, 161, 127);
+	text-align: right;
+	color: rgb(199, 161, 127); 
+	}
+.post-nav a{
+	color: #fff;
+	text-decoration: none;
+	}
+.post-nav a:hover{
+	color: #F4EF8B;
+	}
 
 
 /** 
