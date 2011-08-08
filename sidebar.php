@@ -6,7 +6,7 @@
 		  <div class="widget-content">
 		    <div id="last-location-map"></div>        
 		  </div>
-		  <p class="last-updated">As of Friday August 5 at 9:01am MDT</p>  
+		  <p class="last-updated">As of Friday August 8 at 12:00am PDT</p>  
 		</li>
 		
     <?php if ( ! dynamic_sidebar( 'Widgets in the Right Column' ) ) : ?>
@@ -23,7 +23,7 @@
 
 <script>
 // I know, eh:
-var zoom = 12; 
+var zoom = 6; 
 var	gmapLat = 60.728464
 var	gmapLong = -135.066474;
 // Poorly planned. ;)
