@@ -24,7 +24,7 @@
 <script>
 // I know, eh:
 var zoom = 6; 
-var	gmapLat = 60.728464
-var	gmapLong = -135.066474;
+var	gmapLat = 50.447577
+var	gmapLong = -104.554604;
 // Poorly planned. ;)
 </script>
