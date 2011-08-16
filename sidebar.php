@@ -6,7 +6,7 @@
 		  <div class="widget-content">
 		    <div id="last-location-map"></div>        
 		  </div>
-		  <p class="last-updated">As of Friday August 8 at 12:00am PDT</p>  
+		  <p class="last-updated">As of Friday August 16 at 9:12am CST</p>  
 		</li>
 		
     <?php if ( ! dynamic_sidebar( 'Widgets in the Right Column' ) ) : ?>
